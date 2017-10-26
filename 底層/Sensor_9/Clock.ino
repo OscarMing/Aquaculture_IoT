@@ -3,8 +3,8 @@ void Clock_setup()
     Wire.begin();
     DS3231_init(DS3231_INTCN);
     memset(recv, 0, BUFF_MAX);
-    //Serial.println("GET time");
-//    parse_cmd("T002121113082017",16);   //設定初始時間
+//    Serial.println("GET time");
+//    parse_cmd("T001321026102017",16);   //設定初始時間    2017.10.26 21:13:00
 //    Serial.println("Set time OK");
 }
 

@@ -32,7 +32,7 @@ String MsgS = "";
 #define StartConvert 0
 #define ReadTemperature 1
 const byte numReadings = 20;     //the number of sample times
-byte ECsensorPin = A15;  //EC Meter analog output,pin on analog 1
+byte ECsensorPin = A9;  //EC Meter analog output,pin on analog 1
 byte DS18B20_Pin = 2; //DS18B20 signal, pin on digital 2
 unsigned int AnalogSampleInterval=25,printInterval=500,tempSampleInterval=500;  //analog sample interval;serial print interval;temperature sample interval
 unsigned int readings[numReadings];      // the readings from the analog input
@@ -53,7 +53,7 @@ Return_Temp_EC Temp_EC;
 OneWire ds(DS18B20_Pin);  // on digital pin 2
 //*****************************************************************************************************************************
 // PH define:*******************************************************************************************************************
-#define SensorPin A14            //pH meter Analog output to Arduino Analog Input 2
+#define SensorPin A8            //pH meter Analog output to Arduino Analog Input 2
 #define Offset -0.54            //deviation compensate
 #define samplingInterval 20
 #define ArrayLenth  40    //times of collection

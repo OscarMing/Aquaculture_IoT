@@ -99,8 +99,6 @@ void Get_EC() {
       Serial.print(ECcurrent,3);  //two decimal
       Serial.println("ms/cm");
 */
-
-      
       Temp_EC.var2_EC = ECcurrent;
     }
   }

@@ -29,9 +29,9 @@ void Get_PH()
       }
       */
       PH_value = 3.5*voltage+Offset;
-      //Serial.print(voltage);
-      //Serial.print("  ,  ");
-      //Serial.println(PH_value);
+//      Serial.print(voltage);
+//      Serial.print("  ,  ");
+//      Serial.println(PH_value);
       samplingTime=millis();
   }
 }

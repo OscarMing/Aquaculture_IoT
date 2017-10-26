@@ -28,7 +28,7 @@ int Critical_height=800;
   byte colPins[COLS] = {26,27,28,29};
  Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS);
 
-  unsigned long feed_time = 120000;  // 6 hour
+  unsigned long feed_time = 120000; // ms
   unsigned long feed_last_time = millis();
   byte feed_mode = 2;    // sufficient feed mode
 
@@ -345,7 +345,7 @@ switch(key){
                 func = Enterkeypad();
                 if((control_mode <=8) && (control_mode>=1) && ((func==1) || (func==0))){
                     R_control[(control_mode-1)] = func;
-                    lcd.setCursor(5,1); lcd.print(" ON");
+                    lcd.setCursor(5,1); lcd.print(" GO");
                     sendCmd(7);
                     delay(1000);
                 }       
